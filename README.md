@@ -1,2 +1,3 @@
 # The-Data-Projects
-A collection of standalone projects exploring data analysis, covering data cleaning, analysis, visualization, and engineering, with a strong emphasis on SQL and some use of Python and Excel
+
+A series of unconnected projects where I explore different aspects of data analysis, divided into four parts; data cleaning and transformation, data analysis, data visualization, and data engineering/science. These projects are heavily focused on the use of SQL, with occasional additional support from Python and Excel.
