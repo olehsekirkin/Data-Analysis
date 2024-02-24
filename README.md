@@ -12,7 +12,7 @@ For this first part of this set of projects I used a dataset I foudn on Kaggle, 
 
 Through this process I tried to apply as many techniques as I could remember in order to do the proper cleaning and transformation of data where necessary (applied the queries even if not necessary in this case)
 
-First things first the dataset was divided into 4 .csv files, which had to be prepared to be uploaded into SQL. Being MySQL import wizard that slow, I had to use LOAD DATA LOCAL INFILE in order to load my data fast, so first I had to modify the dates on the .csv files with a short Python code and pandas.
+First things first the dataset was divided into 4 .csv files, which had to be prepared to be uploaded into SQL. Being MySQL import wizard that slow, I had to use LOAD DATA LOCAL INFILE in order to load my data fast, so first I had to modify the dates on the .csv files with a short Python (datapreparation.py) code and pandas.
 
 Once the files were ready, I uploaded them (project1query1.sql) and started: type casting and validation techniques were applied at 'project1query2', then normalization of the data at 'project1query3', data aggregation and summary statistics were applied at 'project1query4' and finally categorization and segmentation of the data was applied at 'project1query5'.
 
