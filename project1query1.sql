@@ -1,6 +1,7 @@
 USE solar_power;
 
 -- Create table for Plant_1_Generation_Data
+
 CREATE TABLE plant_1_generation_data (
     DATE_TIME DATETIME,
     PLANT_ID BIGINT,
@@ -19,6 +20,7 @@ LINES TERMINATED BY '\n'
 IGNORE 1 LINES;
 
 -- Create table for Plant_1_Weather_Sensor_Data
+
 CREATE TABLE plant_1_weather_sensor_data (
     DATE_TIME DATETIME,
     PLANT_ID BIGINT,
@@ -36,6 +38,7 @@ LINES TERMINATED BY '\n'
 IGNORE 1 LINES;
 
 -- Create table for Plant_2_Generation_Data
+
 CREATE TABLE plant_2_generation_data (
     DATE_TIME DATETIME,
     PLANT_ID BIGINT,
@@ -54,6 +57,7 @@ LINES TERMINATED BY '\n'
 IGNORE 1 LINES;
 
 -- Create table for Plant_2_Weather_Sensor_Data
+
 CREATE TABLE plant_2_weather_Sensor_data (
     DATE_TIME DATETIME,
     PLANT_ID BIGINT,
