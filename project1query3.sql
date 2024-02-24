@@ -5,6 +5,7 @@
 -- First we create tables
 
 -- Plants table
+
 CREATE TABLE plants (
     PLANT_ID VARCHAR(255) NOT NULL,
     Location VARCHAR(255),
@@ -13,6 +14,7 @@ CREATE TABLE plants (
 );
 
 -- Source table
+
 CREATE TABLE sources (
     SOURCE_KEY VARCHAR(255) NOT NULL,
     PLANT_ID VARCHAR(255) NOT NULL,
