@@ -10,16 +10,19 @@ FROM plant_1_generation_data
 GROUP BY DATE(DATE_TIME);
 
 -- Plant 1, Average, Min, and Max AC Power Output
+
 SELECT DATE(DATE_TIME) AS Day, AVG(AC_POWER) AS Average_AC_Power, MIN(AC_POWER) AS Min_AC_Power, MAX(AC_POWER) AS Max_AC_Power
 FROM plant_1_generation_data
 GROUP BY DATE(DATE_TIME);
 
 -- Plant 1, Average Daily Ambient and Module Temperature
+
 SELECT DATE(DATE_TIME) AS Day, AVG(AMBIENT_TEMPERATURE) AS Average_Ambient_Temperature, AVG(MODULE_TEMPERATURE) AS Average_Module_Temperature
 FROM plant_1_weather_sensor_data
 GROUP BY DATE(DATE_TIME);
 
 -- Plant 1, Maximum Daily Irradiation
+
 SELECT DATE(DATE_TIME) AS Day, MAX(IRRADIATION) AS Max_Irradiation
 FROM plant_1_weather_sensor_data
 GROUP BY DATE(DATE_TIME);
