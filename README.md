@@ -25,3 +25,7 @@ The amazon_products.csv and amazon_categories.csv are linked through a foreign k
 As you can check on 'project2query1' I went from asking and resolving simple questions like what where the top 5 categories with the highest number of products, to more complicated ones where I aimed, for example, to calculate the weighted average rating of products in each category, based on the number of reviews. I tried to go through different optics in order to analyze the information that this dataset provides to us. I am sure there are a lot more questions that can be asked and resolved with this dataset, so if you find any interesting I am open to try :D!
 
 ## Data visualization
+
+For data visualization I used yet another dataset I found on Kaggle, this time it's the Supply Chain Analysis dataset from the user Harsh Singh. 
+
+Since SQL does not have data visualization options per se, what I experimented with is creating a pipeline, a connection, from my MySQL database to Python, and it worked! It was my first attempt and honestly it was fairly easy, at least for this starter level that I am on now. Then I created four graphic representations on key takes from the dataset with, mostly, matplotlib.
