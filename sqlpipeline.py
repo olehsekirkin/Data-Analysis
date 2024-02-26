@@ -26,7 +26,7 @@ with engine.connect() as connection:
         ax.set_title('Performance by Product Type')
 
         for bar, total_revenue, total_sold in zip(bars, df1['TotalRevenue'], df1['TotalSold']):
-            label = f"${total_revenue:,.0f} / {int(total_sold)}"
+            label = f'${total_revenue:,.0f} / {int(total_sold)}'
             ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height(), label, ha='center', va='bottom', fontsize=8)
 
         cbar = fig.colorbar(scalar_map, ax=ax, orientation='vertical')
