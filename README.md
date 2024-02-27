@@ -1,31 +1,72 @@
 # The-Data-Projects
 
 <p align="center">
-  <img src="https://pipedream.com/s.v0/app_1YMhwo/logo/orig" alt="Title" width="125px" height="125px">
+  <img src="https://i.imgur.com/EZLeQSJ.png" alt="Title" width="380px" height="285px">
+</p>
+A series of unconnected projects where I explore different aspects of data analysis: divided into four parts; data cleaning and transformation, data analysis and data visualization through MySQL and a Python pipeline for the last one; and a simple data engineering project through AWS.
+
+## Solar Power Generation Data
+
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/labs/8/8e/Mysql_logo.png" alt="Title" width="100px" height="80px">
 </p>
 
-A series of unconnected projects where I explore different aspects of data analysis, divided into four parts; data cleaning and transformation, data analysis, data visualization, and data engineering/science. These projects are heavily focused on the use of SQL, with occasional additional support from Python and Excel
+### Dataset
+The journey begins with the "Solar Power Generation Data" dataset by Ani Kannal. This dataset chronicles the performance of two solar power plants in India over 34 days, segmented into four CSV files. These files detail power production at the inverter level and environmental sensor readings across the plant.
 
-## Data Cleaning & Transformation
+### Data Preparation and Cleaning
+- Data Preparation: Employing datapreparation.py (Python with pandas), dates were formatted for SQL compatibility, followed by efficient data importation into MySQL using LOAD DATA LOCAL INFILE.
 
-For this first part of this set of projects I used a dataset I foud on Kaggle, named 'Solar Power Generation Data' by Ani Kannal. This information was collected from two solar power facilities in India over a period of 34 days and consists of two sets of files. Each set includes a dataset for power production and another for sensor readings. The power production data is recorded at the inverter level, where each inverter is connected to several strings of solar panels. On the other hand, the sensor data is compiled at the plant level, using a strategically positioned array of sensors across the facility
+- Analysis Steps: Involved type casting, validation (project1query2), normalization (project1query3), aggregation and summarization (project1query4), and finally categorization and segmentation (project1query5).
 
-Through this process I tried to apply as many techniques as I could remember in order to do the proper cleaning and transformation of data where necessary (applied the queries even if not necessary in this case)
+## Amazon Products Data
 
-First things first the dataset was divided into 4 .csv files, which had to be prepared to be uploaded into SQL. Being MySQL import wizard that slow, I had to use LOAD DATA LOCAL INFILE in order to load my data fast, so first I had to modify the dates on the .csv files with a short Python (datapreparation.py) code and pandas.
+### Dataset
+The second project examines an extensive Amazon products dataset from 2023, featuring over 1.4 million products. Thanks to Asaniczka on Kaggle, this dataset connects products to categories through a relational database schema, opening avenues for deep category analysis.
 
-Once the files were ready, I uploaded them (project1query1.sql) and started: type casting and validation techniques were applied at 'project1query2', then normalization of the data at 'project1query3', data aggregation and summary statistics were applied at 'project1query4' and finally categorization and segmentation of the data was applied at 'project1query5'.
+### Analysis
+- Initial Queries: Began with identifying top categories by product volume (project2query1).
+  
+- Advanced Analysis: Advanced to calculating weighted average product ratings, exploring various analytical angles. Open for collaboration on new and intriguing queries!
 
-## Data Analysis
+## Supply Chain Data
+<p align="center">
+  <img src="https://i.imgur.com/9eZCsm7.png" alt="Title" width="200px" height="120px">
+</p>
 
-To continue with this series of projets and went now with the data analysis side of it. This time I used an Amazon products dataset from 2023 that has information from over 1.4 million products, you can find it on Kaggle and thank the user Asaniczka for it.
+### Dataset
+For visualization, I selected the 'Supply Chain Analysis' dataset from Harsh Singh on Kaggle, focusing on creating graphical representations of the data.
 
-The amazon_products.csv and amazon_categories.csv are linked through a foreign key relationship where the 'category_id' column in the 'amazon_products' references the 'id' column in the 'amazon_categories', allowing us to connect each product to its corresponding category.
+### Visualization Techniques
+- Pipeline Creation: A MySQL to Python pipeline facilitated visualizations, overcoming SQL's visualization limitations.
+  
+- Graphical Insights: Utilized matplotlib to craft four pivotal visual representations, offering valuable insights into the dataset.
 
-As you can check on 'project2query1' I went from asking and resolving simple questions like what where the top 5 categories with the highest number of products, to more complicated ones where I aimed, for example, to calculate the weighted average rating of products in each category, based on the number of reviews. I tried to go through different optics in order to analyze the information that this dataset provides to us. I am sure there are a lot more questions that can be asked and resolved with this dataset, so if you find any interesting I am open to try :D!
+## Spotify Dataset
+<p align="center">
+  <img src="https://k21academy.com/wp-content/uploads/2021/09/AWS-2.png" alt="Title" width="200px" height="105px">
+</p>
 
-## Data visualization
+### Introduction
+Embarking on data engineering, this segment introduces the use of Amazon Web Services (AWS), a premier cloud platform known for its extensive tools and capabilities. The project is centered around the Spotify Dataset 2023, curated by Tony Gordon Jr., streamlined from five to three CSV files for this exploration. This marks my initial journey into data engineering, where I crafted a simple yet effective pipeline to navigate through AWS's ecosystem, ensuring a balance between learning and practical application.
 
-For data visualization I used yet another dataset I found on Kaggle, this time it's the Supply Chain Analysis dataset from the user Harsh Singh. 
+### Pipeline Architecture
+The pipeline designed for this project demonstrates a straightforward and logical flow, utilizing a suite of AWS services to manage and analyze the dataset efficiently:
 
-Since SQL does not have data visualization options per se, what I experimented with is creating a pipeline, a connection, from my MySQL database to Python, and it worked! It was my first attempt and honestly it was fairly easy, at least for this starter level that I am on now. Then I created four graphic representations on key takes from the dataset with, mostly, matplotlib.
+- S3 Staging: The journey begins with uploading the refined Spotify dataset to an Amazon S3 bucket, establishing a secure and scalable starting point for data storage.
+  
+- Glue ETL: Leveraging AWS Glue, the project advances with extract, transform, and load (ETL) operations. This critical phase involves data joining, modification, transformation, and deduplication, facilitated by scripts available in the dataengproject folder.
+  
+- S3 Data Warehouse: Post-ETL, the processed data migrates to a separate S3 bucket, envisioned as a data warehouse. This step optimizes data storage for analysis and querying.
+  
+- Glue Crawler: The Glue Crawler is then employed to categorize and catalog the data within the warehouse, streamlining the preparation for analytical exploration.
+
+- Athena for Analysis: AWS Athena comes into play for executing SQL queries directly on the data stored in S3, offering a powerful and flexible analysis tool.
+  
+- Quicksight for Visualization: Finally, AWS Quicksight transforms analytical outcomes into interactive charts and graphs, enabling intuitive data visualization and insight discovery.
+
+<p align="center">
+  <img src="https://i.imgur.com/J3001R3.png" alt="Title" width="300px" height="68px">
+</p>
+
+This project serves as a foundational exploration into data engineering with AWS, demonstrating the potential of cloud services in managing, analyzing, and visualizing large datasets. By constructing a coherent pipeline from data staging to visualization, I've taken initial steps into the vast domain of AWS, setting the stage for more complex and nuanced data engineering projects in the future.
