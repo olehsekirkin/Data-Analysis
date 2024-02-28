@@ -42,7 +42,7 @@ For visualization, I selected the 'Supply Chain Analysis' dataset from Harsh Sin
   
 - Graphical Insights: Utilized matplotlib to craft four pivotal visual representations, offering valuable insights into the dataset.
 
-## Spotify Dataset
+## Spotify Dataset (AWS)
 <p align="center">
   <img src="https://k21academy.com/wp-content/uploads/2021/09/AWS-2.png" alt="Title" width="200px" height="105px">
 </p>
@@ -70,3 +70,31 @@ The pipeline designed for this project demonstrates a straightforward and logica
 </p>
 
 This project serves as a foundational exploration into data engineering with AWS, demonstrating the potential of cloud services in managing, analyzing, and visualizing large datasets. By constructing a coherent pipeline from data staging to visualization, I've taken initial steps into the vast domain of AWS, setting the stage for more complex and nuanced data engineering projects in the future.
+
+## Weather API (AWS + Snowflake)
+
+<p align="center">
+  <img src="https://i.imgur.com/9fe9f4z.png" alt="Title" width="350px" height="475px">
+</p>
+
+Going deep into more Data Engineering processes. In the 'lambda_function' and 'dynamotowarehouse' are stored the Lambda codes used, 'snowflake.sql' contains the SQL-type code that was implemented in order to connect and store the data in Snowflake.
+
+### Pipeline Architecture
+
+- Data Collection: The process begins with AWS Lambda, which is scheduled to run hourly. This Lambda function is responsible for fetching weather data from an external weather API.
+
+- Data Storage and Initial Processing: The fetched data is then stored in Amazon DynamoDB. DynamoDB serves as the initial repository for the collected data, chosen for its scalability and capability to handle large volumes of data efficiently. DynamoDB Streams is utilized to capture changes to data in the database, effectively providing a real-time data streaming capability.
+
+- Data Streaming to AWS Lambda: Another AWS Lambda function is triggered by the changes recorded in DynamoDB Streams. This function processes the data—potentially aggregating, filtering, or transforming it—before preparing it for storage in AWS S3.
+
+- Data Storage in AWS S3: The processed data is stored in an AWS S3 bucket. S3 acts as an intermediate storage solution, providing a durable and scalable storage environment for the data before it is loaded into Snowflake.
+
+- Data Loading into Snowflake: Finally, Snowflake is configured to load data from the AWS S3 bucket into its database. This is facilitated through Snowflake's ability to directly ingest data from S3, using either Snowflake's internal stages or external stages for managing the data transfer process.
+
+### Connetion with Snowflake:
+
+- Snowflake's integration with AWS allows for seamless data transfer from S3 to Snowflake. This process can be automated through Snowflake's COPY command, which loads data into Snowflake tables from the S3 bucket. The data loaded into Snowflake can then be used for various analytical purposes, leveraging Snowflake's powerful data warehousing and SQL querying capabilities.
+
+- Snowflake's architecture supports structured and semi-structured data (e.g., JSON, Avro, XML), making it versatile for different types of data analysis. This is particularly beneficial for analyzing weather data, which may include structured data (like temperature readings) and semi-structured data (like weather conditions).
+
+This pipeline architecture effectively demonstrates how to leverage AWS services for data collection and processing, while utilizing Snowflake for data storage and analysis. The seamless integration between AWS and Snowflake enables efficient data flow from collection to analysis, providing a robust solution for real-time data engineering projects.
