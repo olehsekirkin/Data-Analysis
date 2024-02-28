@@ -91,7 +91,7 @@ Going deep into more Data Engineering processes. In the 'lambda_function' and 'd
 
 - Data Loading into Snowflake: Finally, Snowflake is configured to load data from the AWS S3 bucket into its database. This is facilitated through Snowflake's ability to directly ingest data from S3, using either Snowflake's internal stages or external stages for managing the data transfer process.
 
-### Connetion with Snowflake:
+### Connection with Snowflake:
 
 - Snowflake's integration with AWS allows for seamless data transfer from S3 to Snowflake. This process can be automated through Snowflake's COPY command, which loads data into Snowflake tables from the S3 bucket. The data loaded into Snowflake can then be used for various analytical purposes, leveraging Snowflake's powerful data warehousing and SQL querying capabilities.
 
