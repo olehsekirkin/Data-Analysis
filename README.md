@@ -110,7 +110,9 @@ This projet analyzes the Metro Interstate Traffic Volumet dataset from the UC Ir
 ### Key Highlights:
 
 - Data preparation: Applied data cleaning and feature engineering to enhance the dataset for analysis.
+
 - Visualization: Created visual representations to understand traffic trends and patterns.
+
 - Predictive modeling: Compared various regression models to predict traffic volume, identifying the most accurate model through performance metrics.
 
 
