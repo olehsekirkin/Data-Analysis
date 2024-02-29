@@ -98,3 +98,20 @@ Going deep into more Data Engineering processes. In the 'lambda_function' and 'd
 - Snowflake's architecture supports structured and semi-structured data (e.g., JSON, Avro, XML), making it versatile for different types of data analysis. This is particularly beneficial for analyzing weather data, which may include structured data (like temperature readings) and semi-structured data (like weather conditions).
 
 This pipeline architecture effectively demonstrates how to leverage AWS services for data collection and processing, while utilizing Snowflake for data storage and analysis. The seamless integration between AWS and Snowflake enables efficient data flow from collection to analysis, providing a robust solution for real-time data engineering projects.
+
+## Traffic Volume Data
+
+<p align="center">
+  <img src="https://i.imgur.com/tE4HZnN.png" alt="Title" width="395px" height="475px">
+</p>
+
+This projet analyzes the Metro Interstate Traffic Volumet dataset from the UC Irvine Machine Learning Repository. The projet is split into two main parts: data preprocessing and visualization, an predictive modeling using regression techniques.
+
+### Key Highlights:
+
+- Data preparation: Applied data cleaning and feature engineering to enhance the dataset for analysis.
+- Visualization: Created visual representations to understand traffic trends and patterns.
+- Predictive modeling: Compared various regression models to predict traffic volume, identifying the most accurate model through performance metrics.
+
+
+
