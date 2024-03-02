@@ -102,7 +102,7 @@ This pipeline architecture effectively demonstrates how to leverage AWS services
 ## Traffic Volume Data
 
 <p align="center">
-  <img src="https://i.imgur.com/tE4HZnN.png" alt="Title" width="395px" height="475px">
+  <img src="https://i.imgur.com/Qqo9RlC.png" alt="Title" width="395px" height="475px">
 </p>
 
 This project analyzes the Metro Interstate Traffic Volume dataset from the UC Irvine Machine Learning Repository. The project is split into two main parts: data preprocessing and visualization, and predictive modeling using regression techniques.
