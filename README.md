@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://i.imgur.com/EZLeQSJ.png" alt="Title" width="380px" height="285px">
 </p>
-A series of unconnected projects where I explore different aspects of data analysis: divided into four parts; data cleaning and transformation, data analysis and data visualization through MySQL and a Python pipeline for the last one; and a data engineering project through AWS.
+A series of unconnected projects where I explore different aspects of data analysis: divided into four parts; data cleaning and transformation, data analysis, data visualization through MySQL and a Python pipeline; and data engineering projects through AWS.
 
 ## Solar Power Generation Data
 
