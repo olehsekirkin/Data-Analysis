@@ -1,9 +1,12 @@
 # The-Data-Projects
 
-<p align="center">
-  <img src="https://i.imgur.com/EZLeQSJ.png" alt="Title" width="380px" height="285px">
-</p>
 A series of unconnected projects where I explore different aspects of data analysis: divided into four parts; data cleaning and transformation, data analysis, data visualization through MySQL and a Python pipeline; and data engineering projects through AWS.
+
+### CURRENT WORK IN PROGRESS:
+
+<p align="center">
+  <img src="https://i.imgur.com/BKcwCIy.png" alt="Title" width="715px" height="272px">
+</p>
 
 ## Solar Power Generation Data
 
