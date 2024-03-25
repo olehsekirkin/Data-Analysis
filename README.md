@@ -1,4 +1,4 @@
-# The-Data-Projects
+# Data Analysis
 
 A series of unconnected projects where I explore different aspects of data analysis: divided into four parts; data cleaning and transformation, data analysis, data visualization through MySQL and a Python pipeline; and data engineering projects through AWS
 
