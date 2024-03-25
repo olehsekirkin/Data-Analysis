@@ -2,10 +2,8 @@
 
 A series of unconnected projects where I explore different aspects of data analysis: divided into four parts; data cleaning and transformation, data analysis, data visualization through MySQL and a Python pipeline; and data engineering projects through AWS
 
-### CURRENT WORK IN PROGRESS:
-
 <p align="center">
-  <img src="https://i.imgur.com/BKcwCIy.png" alt="Title" width="715px" height="272px">
+  <img src="https://miro.medium.com/v2/resize:fit:540/1*J_EXEmUkOcg-rgzJudUhZQ.png" alt="Title" width="540px" height="320px">
 </p>
 
 ## Solar Power Generation Data
