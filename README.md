@@ -3,7 +3,7 @@
 A series of unconnected projects where I explore different aspects of data analysis: divided into four parts; data cleaning and transformation, data analysis, data visualization through MySQL and a Python pipeline; and data engineering projects through AWS
 
 <p align="center">
-  <img src="https://miro.medium.com/v2/resize:fit:540/1*J_EXEmUkOcg-rgzJudUhZQ.png" alt="Title" width="540px" height="320px">
+  <img src="https://images.prismic.io/mparticle/3cba8133-835b-4897-a05d-295295ef1acf_sql-pyth.png?auto=compress%2Cformat&rect=0%2C0%2C2520%2C1414&w=1230&h=690&fit=max" alt="Title" width="540px" height="320px">
 </p>
 
 ## Solar Power Generation Data
